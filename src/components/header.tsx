@@ -5,7 +5,8 @@ interface HeaderDescription {
 
 export function HeaderLayout({ titulo, texto }: HeaderDescription) {
   return (
-    <div>
+    <div className="">
+      
       <h1>
         {titulo}
       </h1>
