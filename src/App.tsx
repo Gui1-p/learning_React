@@ -1,8 +1,10 @@
-import { HeaderLayout } from './components/header';
-import { ContentHeader } from './contents/header_description';
+import { Header } from './components/header'; 
+
+import { Hero_1 } from './components/hero_1';
+import { ContentHero_1 } from './contents/hero_1_description';
 //
-import { hero_1 as Hero_1 } from "./components/hero_1";
-import { ContentHero } from "./contents/hero_1_description";
+import { Hero_2 } from "./components/hero_2";
+import { ContentHero_2 } from "./contents/hero_2_description";
 //
 import { Team } from './components/team';
 import { ContentTeam } from './contents/team_description';
@@ -13,18 +15,21 @@ function App() {
 
     //navbar
 
-    <main className="min-h-screen bg-gray-500">
-      <HeaderLayout 
-        titulo={ContentHeader.sobre.titulo} 
-        texto={ContentHeader.sobre.descricao} 
+    <main className="min-h-screen bg-zinc-50">
+      
+      <Header />
+
+      <Hero_1 
+        titulo={ContentHero_1.sobre.titulo} 
+        texto={ContentHero_1.sobre.descricao} 
       />
-      <Hero_1
-        image_1={ContentHero.upper.image_1}
-        alt_1={ContentHero.upper.alt_1}
-        text_1={ContentHero.upper.text_1}
-        image_2={ContentHero.lower.image_2}
-        alt_2={ContentHero.lower.alt_2}
-        text_2={ContentHero.lower.text_2}
+      <Hero_2
+        image_1={ContentHero_2.upper.image_1}
+        alt_1={ContentHero_2.upper.alt_1}
+        text_1={ContentHero_2.upper.text_1}
+        image_2={ContentHero_2.lower.image_2}
+        alt_2={ContentHero_2.lower.alt_2}
+        text_2={ContentHero_2.lower.text_2}
       />
       <Team 
         m1={ContentTeam.membro1} 

@@ -10,12 +10,15 @@ interface MembroProps {
 function CardMembro({ nome, foto, alt, insta, git }: MembroProps) {
   return (
     <div className="flex flex-col items-center p-6 bg-white border border-zinc-200 rounded-2xl shadow-sm w-64">
-      <img src={foto} alt={alt} className="size-32 rounded-full object-cover mb-4 border-2 border-blue-500" />
+      <img src={foto} alt={alt} className="size-32 rounded-full object-cover mb-4 border-2 border-indigo-500" />
+      
       <h3 className="text-xl font-bold text-zinc-800 mb-4">{nome}</h3>
+      
       <div className="flex gap-4">
-        <a href={insta} className="text-sm text-blue-600">Instagram</a>
-        <a href={git} className="text-sm text-blue-600">Github</a>
+        <a href={insta} className="text-sm text-indigo-600">Instagram</a>
+        <a href={git} className="text-sm text-indigo-600">Github</a>
       </div>
+
     </div>
   );
 }

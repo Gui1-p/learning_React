@@ -1,31 +1,24 @@
-interface HeroDescription{
-    image_1: string;
-    alt_1: string;
-    text_1: string;
-    image_2: string;
-    alt_2: string;
-    text_2: string;
+interface Hero_1_Description {
+  titulo: string;
+  texto: string;
 }
 
-export function hero_1({ image_1, alt_1, text_1, image_2, alt_2, text_2 }:HeroDescription) {
-   return(
-   <div className="max-w-6xl mx-auto space-y-12">
-        <div className="flex items-center justify-between p-4 gap-8">
-            <div className="flex-1 text-center">
-                <p className="text-lg"> {text_1} </p>
-            </div>
-            <div className="flex-1 flex justify-center">
-                <img src = {image_1} alt = {alt_1} className="rounded-xl size-96 object-cover"/>
-            </div>
-        </div>
+export function Hero_1({ titulo, texto }: Hero_1_Description) {
+  return (
+    <div className="relative flex min-h-[80vh] flex-col items-center justify-center bg-zinc-400 px-4 text-center ">
+      
+      <div className="z-10 max-w-4xl">
 
-        <div className="flex items-center justify-between p-4 gap-8">
-            <div className="flex-1 flex justify-center">
-                <img src = {image_2} alt = {alt_2} className="rounded-xl size-96 object-cover"/>
-            </div>
-            <div className="flex-1 text-center">
-                <p className="text-lg"> {text_2} </p>
-            </div>
-        </div>
-   </div>);
+        <h1 className="mb-6 text-5xl font-bold tracking-tight text-zinc-900 md:text-7xl">
+          {titulo}
+        </h1>
+
+        <p className="mb-10 text-lg text-zinc-500 md:text-xl ">
+          {texto}
+        </p>
+
+      </div>
+
+    </div>
+  );
 }

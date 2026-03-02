@@ -1,24 +1,27 @@
-interface HeaderDescription {
-  titulo: string;
-  texto: string;
-}
+export function Header() {
+    return (
+        <header className="bg-white">
+            <div className="p-2">
+                <LogoVision />
+            </div>
 
-export function HeaderLayout({ titulo, texto }: HeaderDescription) {
+            
+        </header>
+    )
+};
+
+
+
+export const LogoVision = () => {
   return (
-    <div className="relative flex min-h-[80vh] flex-col items-center justify-center bg-zinc-600 px-4 text-center ">
-      
-      <div className="z-10 max-w-4xl">
-
-        <h1 className="mb-6 text-5xl font-bold tracking-tight text-white md:text-7xl">
-          {titulo}
-        </h1>
-
-        <p className="mb-10 text-lg text-zinc-400 md:text-xl ">
-          {texto}
-        </p>
-
+    <div className="relative inline-flex flex-col items-center">
+      <div className="flex items-center font-bold tracking-widest text-zinc-900 text-3xl">
+        VISION
       </div>
-
+      
+      <div className="w-full h-[1px] bg-slate-800 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#32FF7E] to-transparent w-1/2 animate-shimmer"></div>
+      </div>
     </div>
-  );
-}
+  );  
+};
