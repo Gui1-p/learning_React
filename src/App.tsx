@@ -3,6 +3,9 @@ import { ContentHeader } from './contents/header_description';
 //
 import { hero_1 as Hero_1 } from "./components/hero_1";
 import { ContentHero } from "./contents/hero_1_description";
+//
+import { Team } from './components/team';
+import { ContentTeam } from './contents/team_description';
 
 function App() {
 
@@ -10,7 +13,7 @@ function App() {
 
     //navbar
 
-    <main className="min-h-screen bg-gray-500 py-10">
+    <main className="min-h-screen bg-gray-500">
       <HeaderLayout 
         titulo={ContentHeader.sobre.titulo} 
         texto={ContentHeader.sobre.descricao} 
@@ -23,7 +26,13 @@ function App() {
         alt_2={ContentHero.lower.alt_2}
         text_2={ContentHero.lower.text_2}
       />
-
+      <Team 
+        m1={ContentTeam.membro1} 
+        m2={ContentTeam.membro2} 
+        //m3={ContentTeam.membro3} 
+        //m4={ContentTeam.membro4} 
+        //m5={ContentTeam.membro5} 
+      />
       
 
     </main>
