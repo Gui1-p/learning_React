@@ -30,9 +30,6 @@ export function Team(props: any) {
       <div className="flex flex-wrap justify-center gap-8">
         <CardMembro {...props.m1} />
         <CardMembro {...props.m2} />
-        <CardMembro {...props.m3} />
-        <CardMembro {...props.m4} />
-        <CardMembro {...props.m5} />
       </div>
     </section>
   );

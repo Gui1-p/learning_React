@@ -8,6 +8,8 @@ import { ContentHero_2 } from "./contents/hero_2_description";
 //
 import { Team } from './components/team';
 import { ContentTeam } from './contents/team_description';
+import  { Footer } from './components/footer';
+
 
 function App() {
 
@@ -15,7 +17,7 @@ function App() {
 
     //navbar
 
-    <main className="min-h-screen bg-zinc-50">
+    <main className="min-h-screen flex-col bg-zinc-50">
       
       <Header />
 
@@ -23,6 +25,7 @@ function App() {
         titulo={ContentHero_1.sobre.titulo} 
         texto={ContentHero_1.sobre.descricao} 
       />
+
       <Hero_2
         image_1={ContentHero_2.upper.image_1}
         alt_1={ContentHero_2.upper.alt_1}
@@ -31,6 +34,7 @@ function App() {
         alt_2={ContentHero_2.lower.alt_2}
         text_2={ContentHero_2.lower.text_2}
       />
+
       <Team 
         m1={ContentTeam.membro1} 
         m2={ContentTeam.membro2} 
@@ -39,6 +43,7 @@ function App() {
         //m5={ContentTeam.membro5} 
       />
       
+      <Footer />
 
     </main>
 
