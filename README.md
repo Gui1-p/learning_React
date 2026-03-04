@@ -1,73 +1,61 @@
-# React + TypeScript + Vite
+# Modern Landing Page - React + TypeScript 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
-Currently, two official plugins are available:
+Este projeto é uma **Landing Page de alta performance** construída com as tecnologias mais modernas do ecossistema Frontend. O foco principal foi aplicar conceitos de componentização limpa, separação de dados da interface e conteinerização.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Stack Tecnológica
 
-## React Compiler
+- **Core:** [React.js](https://reactjs.org/) (Hooks e Componentes Funcionais)
+- **Build Tool:** [Vite](https://vitejs.dev/) (Fast Refresh e Optimized Build)
+- **Linguagem:** [TypeScript](https://www.typescriptlang.org/) (Tipagem estática para robustez)
+- **Estilização:** [Tailwind CSS v4](https://tailwindcss.com/) (Engine de estilização de última geração)
+- **Infraestrutura:** [Docker](https://www.docker.com/) (Ambiente isolado e replicável)
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## 🏗️ Diferenciais do Projeto
 
-## Expanding the ESLint configuration
+- **Data-Driven UI:** Os textos e descrições não estão "hardcoded" nos componentes. Eles são consumidos de arquivos de configuração em `src/contents/`, facilitando a manutenção e futuras internacionalizações (i18n).
+- **Componentização Modular:** Divisão clara entre seções (Header, Hero, Team, Footer), permitindo o reuso de código.
+- **Ambiente Profissional:** Configuração pronta para Docker, garantindo que o projeto rode exatamente da mesma forma em qualquer máquina.
+- **Design Minimalista:** Paleta de cores baseada em tons de **Zinc** e **Slate**, focada em legibilidade e estética profissional.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Como Executar
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Localmente
+1. Instale as dependências:
+   ```bash
+   npm install
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+    Rode em modo de desenvolvimento:
+    Bash
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+    npm run dev
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Via Docker
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+    Build da imagem:
+    Bash
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+    docker build -t landing-page-tech .
+
+    Execução do container:
+    Bash
+
+    docker run -p 80:80 landing-page-tech
+
+📂 Organização de Pastas
+Plaintext
+
+src/
+├── components/   # UI Units (Navbar, Hero, Team, etc.)
+├── contents/     # Textos e configurações (Single Source of Truth)
+├── assets/       # Media e Static files
+├── App.tsx       # Layout Orchestrator
+└── main.tsx      # Entry point e CSS Injection
+
+Projeto desenvolvido com foco em boas práticas de Engenharia de Software e performance Web.
+
