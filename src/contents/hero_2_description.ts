@@ -4,12 +4,12 @@ export const ContentHero_2 = {
     upper: {
         image_1: imgSegmented,
         alt_1: "descrição simples e direta da imagem",
-        text_1: "texto sobre a imagem ou sla"
+        text_1: "Descrição sobre a imagem ou relacionada ao projeto"
     },
 
     lower: {
         image_2: imgHero_1,
         alt_2: "descrição simples e direta da imagem",
-        text_2: "texto sobre a imagem ou sla"
+        text_2: "Descrição sobre a imagem ou relacionada ao projeto"
     }
 };

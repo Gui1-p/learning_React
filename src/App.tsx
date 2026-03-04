@@ -1,4 +1,4 @@
-import { Header } from './components/header'; 
+import { Navbar } from './components/header';
 
 import { Hero_1 } from './components/hero_1';
 import { ContentHero_1 } from './contents/hero_1_description';
@@ -15,11 +15,9 @@ function App() {
 
   return (
 
-    //navbar
-
-    <main className="min-h-screen flex-col bg-zinc-50">
-      
-      <Header />
+    
+    <main className="min-h-screen flex-col bg-zinc-300">
+      <Navbar />
 
       <Hero_1 
         titulo={ContentHero_1.sobre.titulo} 
@@ -46,9 +44,6 @@ function App() {
       <Footer />
 
     </main>
-
-    //footer
-
   )
 }
 

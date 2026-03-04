@@ -5,7 +5,9 @@ interface Hero_1_Description {
 
 export function Hero_1({ titulo, texto }: Hero_1_Description) {
   return (
-    <div className="relative flex min-h-[80vh] flex-col items-center justify-center bg-zinc-400 px-4 text-center ">
+    <div id="home" className="relative flex min-h-[80vh] flex-col items-center justify-center bg-zinc-50 bg-[radial-gradient(circle,#e2e8f0_1px,transparent_1px)] 
+    bg-size-[20px_20px] px-4 text-center border-y border-zinc-300">
+      
       
       <div className="z-10 max-w-4xl">
 

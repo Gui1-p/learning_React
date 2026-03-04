@@ -9,7 +9,7 @@ interface MembroProps {
 // Sub-componente para manter a organização
 function CardMembro({ nome, foto, alt, insta, git }: MembroProps) {
   return (
-    <div className="flex flex-col items-center p-6 bg-white border border-zinc-200 rounded-2xl shadow-sm w-64">
+    <div className="flex flex-col items-center p-6 bg-white border border-zinc-300 rounded-2xl shadow-sm w-64">
       <img src={foto} alt={alt} className="size-32 rounded-full object-cover mb-4 border-2 border-indigo-500" />
       
       <h3 className="text-xl font-bold text-zinc-800 mb-4">{nome}</h3>
@@ -25,8 +25,8 @@ function CardMembro({ nome, foto, alt, insta, git }: MembroProps) {
 
 export function Team(props: any) {
   return (
-    <section className="max-w-9xl mx-auto py-12">
-      <h2 className="text-3xl font-bold text-center mb-10 text-white">Nossa Equipe</h2>
+    <section id="team" className="max-w-9xl mx-auto py-12 bg-zinc-100 flex flex-col flex-wrap">
+      <h2 className="text-3xl font-bold text-center mb-10 text-zinc-800">Nossa Equipe</h2>
       <div className="flex flex-wrap justify-center gap-8">
         <CardMembro {...props.m1} />
         <CardMembro {...props.m2} />

@@ -1,7 +1,7 @@
 export const ContentHero_1 = {
   sobre: {
-    titulo: "Titulo, esse titulo é passado via props do ts",
+    titulo: "Título",
     
-    descricao: "uma descrição qualquer, estou passando ela usando props do typescript."
+    descricao: "Descrição"
   }
 };
