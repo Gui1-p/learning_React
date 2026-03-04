@@ -30,31 +30,31 @@ Este projeto é uma **Landing Page de alta performance** construída com as tecn
    ```bash
    npm install
 
-    Rode em modo de desenvolvimento:
-    Bash
+   Rode em modo de desenvolvimento:
+   Bash
 
-    npm run dev
+   npm run dev
 
 2. Via Docker
 
-    Build da imagem:
-    Bash
+   Build da imagem:
+   Bash
 
-    docker build -t landing-page-tech .
+   docker build -t landing-page-tech .
 
-    Execução do container:
-    Bash
+   Execução do container:
+   Bash
 
-    docker run -p 80:80 landing-page-tech
+   docker run -p 80:80 landing-page-tech
 
 📂 Organização de Pastas
 Plaintext
 ```
-src/
-├── components/   # UI Units (Navbar, Hero, Team, etc.)
-├── contents/     # Textos e configurações (Single Source of Truth)
-├── assets/       # Media e Static files
-├── App.tsx       # Layout Orchestrator
-└── main.tsx      # Entry point e CSS Injection
+   src/
+   ├── components/   # UI Units (Navbar, Hero, Team, etc.)
+   ├── contents/     # Textos e configurações (Single Source of Truth)
+   ├── assets/       # Media e Static files
+   ├── App.tsx       # Layout Orchestrator
+   └── main.tsx      # Entry point e CSS Injection
 ```
 Projeto desenvolvido com foco em boas práticas de Engenharia de Software e performance Web.
