@@ -47,14 +47,11 @@ Este projeto é uma **Landing Page de alta performance** construída com as tecn
 
    docker run -p 80:80 landing-page-tech
 
-📂 Organização de Pastas
-Plaintext
-```
-   src/
-   ├── components/   # UI Units (Navbar, Hero, Team, etc.)
-   ├── contents/     # Textos e configurações (Single Source of Truth)
-   ├── assets/       # Media e Static files
-   ├── App.tsx       # Layout Orchestrator
-   └── main.tsx      # Entry point e CSS Injection
-```
-Projeto desenvolvido com foco em boas práticas de Engenharia de Software e performance Web.
+## 📂 Organização de Pastas
+
+   src/  
+   ├── components/   # UI Units (Navbar, Hero, Team, etc.)  
+   ├── contents/     # Textos e configurações (Single Source of Truth)  
+   ├── assets/       # Media e Static files  
+   ├── App.tsx       # Layout Orchestrator  
+   └── main.tsx      # Entry point e CSS Injection  
