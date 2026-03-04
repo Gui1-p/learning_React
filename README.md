@@ -35,7 +35,7 @@ Este projeto é uma **Landing Page de alta performance** construída com as tecn
 
     npm run dev
 
-Via Docker
+2. Via Docker
 
     Build da imagem:
     Bash
@@ -58,4 +58,3 @@ src/
 └── main.tsx      # Entry point e CSS Injection
 
 Projeto desenvolvido com foco em boas práticas de Engenharia de Software e performance Web.
-
