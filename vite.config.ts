@@ -9,5 +9,12 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  server: {
+    host: true, // Isso permite que o Docker acesse o servidor do Vite
+    port: 5173,
+    watch: {
+      usePolling: true, // Necessário para o Hot Reload funcionar no Docker (Windows)
+    }, 
+  },
 })
 

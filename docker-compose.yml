@@ -1,0 +1,11 @@
+services:
+  frontend:
+    image: node:22-alpine
+    working_dir: /app
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    # O --host é obrigatório para o Vite funcionar no Docker
+    command: sh -c "npm install && npm run dev -- --host"
